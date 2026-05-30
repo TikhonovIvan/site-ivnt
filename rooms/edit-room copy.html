@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+
+    <div class="nav-bg">
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">PC_inv_№1</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+
+                    <!-- Левое меню -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center gap-5">
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="index.html" href="index.html">
+                                Компьютеры
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="monitor.html" href="monitor.html">
+                                Мониторы
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="print.html" href="print.html">
+                                Принтеры
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="ups.html" href="ups.html">
+                                УПС
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="network.html" href="network.html">
+                                Сетевое оборудование
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="various.html" href="various.html">
+                                Разное
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Правый dropdown -->
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Admin
+                        </button>
+                        <ul class="dropdown-menu admin-l">
+                            <li><a class="dropdown-item" href="#">Настройки</a></li>
+                            <li><a class="dropdown-item" href="#">Пользователи</a></li>
+                            <li><a class="dropdown-item" href="./department.html">Отделения</a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="login.html">Выйти</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <main>
+        <div class="container mt-4">
+
+            <div class="card shadow border-0">
+
+                <div class="card-header bg-warning">
+
+                    <h4 class="mb-0">
+                        Редактирование кабинета
+                    </h4>
+
+                </div>
+
+                <div class="card-body">
+
+                    <form>
+
+                        <div class="row">
+
+                            <!-- Отделение -->
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+                                    Отделение
+                                </label>
+
+                                <select class="form-select">
+
+                                    <option>
+                                        Бухгалтерия
+                                    </option>
+
+                                    <option>
+                                        IT отдел
+                                    </option>
+
+                                    <option>
+                                        Отдел кадров
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Корпус -->
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+                                    Корпус
+                                </label>
+
+                                <input type="text" class="form-control" value="А">
+
+                            </div>
+
+
+                            <!-- Этаж -->
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+                                    Этаж
+                                </label>
+
+                                <input type="number" class="form-control" value="2">
+
+                            </div>
+
+
+                            <!-- Кабинет -->
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+                                    Номер кабинета
+                                </label>
+
+                                <input type="text" class="form-control" value="203">
+
+                            </div>
+
+
+                            <!-- Ответственный -->
+                            <div class="col-md-12 mb-3">
+
+                                <label class="form-label">
+                                    Ответственный
+                                </label>
+
+                                <input type="text" class="form-control" value="Иванов И.И.">
+
+                            </div>
+
+
+                            <!-- Описание -->
+                            <div class="col-md-12 mb-3">
+
+                                <label class="form-label">
+                                    Примечание
+                                </label>
+
+                                <textarea class="form-control" rows="3">Кабинет бухгалтерии</textarea>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Статистика -->
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-3">
+
+                                <div class="card text-center shadow-sm">
+
+                                    <div class="card-body">
+
+                                        <h6>ПК</h6>
+                                        <h3>12</h3>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-3">
+
+                                <div class="card text-center shadow-sm">
+
+                                    <div class="card-body">
+
+                                        <h6>Мониторы</h6>
+                                        <h3>10</h3>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-3">
+
+                                <div class="card text-center shadow-sm">
+
+                                    <div class="card-body">
+
+                                        <h6>Принтеры</h6>
+                                        <h3>2</h3>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-3">
+
+                                <div class="card text-center shadow-sm">
+
+                                    <div class="card-body">
+
+                                        <h6>УПС</h6>
+                                        <h3>1</h3>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Кнопки -->
+
+                        <div class="d-flex justify-content-end gap-3 mt-4">
+
+                            <a href="department.html" class="btn btn-secondary">
+
+                                Назад
+
+                            </a>
+
+                            <button type="submit" class="btn btn-success">
+
+                                Сохранить изменения
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

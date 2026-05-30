@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <main>
+        <!-- Навигация сайта -->
+        <div class="nav-bg">
+
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">PC_inv_№1</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+
+                        <!-- Левое меню -->
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center gap-5">
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-page="index.html" href="index.html">
+                                    Компьютеры
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-page="monitor.html" href="monitor.html">
+                                    Мониторы
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-page="print.html" href="print.html">
+                                    Принтеры
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-page="ups.html" href="ups.html">
+                                    УПС
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-page="network.html" href="network.html">
+                                    Сетевое оборудование
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-page="various.html" href="various.html">
+                                    Разное
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <!-- Правый dropdown -->
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Admin
+                            </button>
+                            <ul class="dropdown-menu admin-l">
+                                <li><a class="dropdown-item" href="#">Настройки</a></li>
+                                <li><a class="dropdown-item" href="#">Пользователи</a></li>
+                                <li><a class="dropdown-item" href="#">Отделения</a></li>
+                                <hr>
+                                <li><a class="dropdown-item" href="login.html">Выйти</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <!-- Информация о принтерах  -->
+        <div>
+            <!-- Верхняя панель -->
+            <div class="container-fluid mt-4">
+
+                <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+
+                    <!-- Кнопка -->
+                    <a class="btn btn-primary px-4" href="./add-info/add_print.html">
+                        + Добавить Принтер
+                    </a>
+
+                    <!-- Поиск -->
+                    <form class="d-flex gap-2">
+
+                        <input type="text" class="form-control" placeholder="Поиск " style="width: 250px;">
+
+                        <button class="btn btn-dark">
+                            Найти
+                        </button>
+
+                    </form>
+
+                    <!-- Статистика -->
+                    <div class="d-flex gap-4">
+
+                        <div class="card shadow-sm border-0 px-4 py-2">
+                            <h6 class="mb-1 text-muted">Количество принтеров</h6>
+                            <h4 class="mb-0">56</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Таблица -->
+                <div class="table-responsive">
+
+                    <table class="table table-hover table-bordered align-middle text-center">
+
+                        <thead class="table-dark">
+
+                            <tr>
+                                <th>№</th>
+                                <th>Инвентарный №</th>
+                                <th>Модель</th>
+                                <th>Отделение</th>
+                                <th>Кабинет</th>
+                                <th>Состояние</th>
+                                <th>Действия</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <div class="inventory-box">
+
+                                        <small class="text-muted d-block">
+                                            1С: 1002458
+                                        </small>
+
+                                        <strong>
+                                            PC-000125
+                                        </strong>
+
+                                    </div>
+                                </td>
+                                <td>Canon MF3010</td>
+                                <td>Бухгалтерия</td>
+                                <td>203 кб.</td>
+                                <td>
+                                    <i class="bi bi-check-circle-fill status-ok" title="Рабочий"></i>
+                                </td>
+
+                                <td>
+
+                                    <div class="d-flex justify-content-center gap-1">
+
+                                        <!-- Просмотр -->
+                                        <button class="btn btn-sm btn-info">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+
+                                        <!-- Редактировать -->
+                                        <button class="btn btn-sm btn-warning">
+                                            <i class="bi bi-pencil-square"></i>
+                                        </button>
+
+                                        <!-- Удалить -->
+                                        <button class="btn btn-sm btn-danger">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+
+                                        <!-- Печатать паспорт -->
+                                        <button class="btn btn-sm btn-success">
+                                            <i class="bi bi-printer"></i>
+
+                                        </button>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="inventory-box">
+
+                                        <small class="text-muted d-block">
+                                            1С: 1002458
+                                        </small>
+
+                                        <strong>
+                                            PC-000125
+                                        </strong>
+
+                                    </div>
+                                </td>
+                                <td>Canon MF3010</td>
+                                <td>Бухгалтерия</td>
+                                <td>201 кб.</td>
+                                <td>
+                                    <i class="bi bi-x-circle-fill status-error" title="Нерабочий"></i>
+                                </td>
+
+                                <td>
+
+                                    <div class="d-flex justify-content-center gap-1">
+
+                                        <!-- Просмотр -->
+                                        <button class="btn btn-sm btn-info">
+                                            <i class="bi bi-eye"></i>
+                                        </button>
+
+                                        <!-- Редактировать -->
+                                        <button class="btn btn-sm btn-warning">
+                                            <i class="bi bi-pencil-square"></i>
+                                        </button>
+
+                                        <!-- Удалить -->
+                                        <button class="btn btn-sm btn-danger">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+
+                                        <!-- Печатать паспорт -->
+                                        <button class="btn btn-sm btn-success">
+                                            <i class="bi bi-printer"></i>
+
+                                        </button>
+
+                                    </div>
+                                </td>
+                            </tr>
+
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+
+    <div class="nav-bg">
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">PC_inv_№1</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+
+                    <!-- Левое меню -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center gap-5">
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="index.html" href="../index.html">
+                                Компьютеры
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="monitor.html" href="../monitor.html">
+                                Мониторы
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="print.html" href="../print.html">
+                                Принтеры
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="ups.html" href="../ups.html">
+                                УПС
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="network.html" href="../network.html">
+                                Сетевое оборудование
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="various.html" href="../various.html">
+                                Разное
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Правый dropdown -->
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Admin
+                        </button>
+                        <ul class="dropdown-menu admin-l">
+                            <li><a class="dropdown-item" href="#">Настройки</a></li>
+                            <li><a class="dropdown-item" href="#">Пользователи</a></li>
+                            <li><a class="dropdown-item" href="#">Отделения</a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="login.html">Выйти</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <main class="container mt-5">
+
+        <div class="card shadow border-0">
+
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">Добавление нового УПС</h4>
+            </div>
+
+            <div class="card-body">
+
+                <form>
+
+                    <div class="row">
+
+                        <!-- Инвентарный номер -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">
+                                Инвентарный №
+                            </label>
+
+                            <input type="text" class="form-control" placeholder="Например PC-001">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+
+                            <label class="form-label">
+                                Внутренний инвентарный код
+                            </label>
+
+                            <input type="text" id="pcCode" class="form-control" readonly>
+
+                        </div>
+
+                        <!-- Модель -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">
+                                Модель
+                            </label>
+
+                            <input type="text" class="form-control" placeholder="Asus 3124">
+                        </div>
+
+                        <!-- Отдел -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">
+                                Выход подключения
+                            </label>
+
+                            <select class="form-select">
+
+                                <option selected>
+                                    Выберите стандарт
+                                </option>
+
+                                <option>
+                                    Европейский
+                                </option>
+
+                                <option>
+                                    Китайский
+                                </option>
+
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">
+                                Количество выходов
+                            </label>
+
+                            <input type="text" class="form-control" placeholder="2">
+                        </div>
+
+                        <!-- Состояние -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">
+                                Состояние
+                            </label>
+
+                            <select class="form-select">
+
+                                <option selected>
+                                    Выберите состояние устройство
+                                </option>
+
+                                <option>
+                                    Рабочее
+                                </option>
+
+                                <option>
+                                    Нерабочее
+                                </option>
+
+                            </select>
+                        </div>
+
+                        <!-- Отдел -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">
+                                Отделение
+                            </label>
+
+                            <select class="form-select">
+
+                                <option selected>
+                                    Выберите отдел
+                                </option>
+
+                                <option>
+                                    Бухгалтерия
+                                </option>
+
+                                <option>
+                                    IT отдел
+                                </option>
+
+                                <option>
+                                    Отдел кадров
+                                </option>
+
+                            </select>
+                        </div>
+
+
+
+                        <!-- Кабинет -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">
+                                Кабинет
+                            </label>
+
+                            <input type="text" class="form-control" placeholder="203">
+                        </div>
+
+                        <!-- Примечание -->
+                        <div class="col-12 mb-3">
+
+                            <label class="form-label">
+                                Примечание
+                            </label>
+
+                            <textarea class="form-control" rows="3"></textarea>
+
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex justify-content-end gap-3">
+
+                        <button type="reset" class="btn btn-secondary">
+                            Очистить
+                        </button>
+
+                        <button type="submit" class="btn btn-success">
+                            Сохранить
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

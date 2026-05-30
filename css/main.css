@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+body {
+
+    min-height: 100vh;
+
+
+}
+
+
+.bloc-login {
+    width: 450px;
+    min-height: 320px;
+}
+
+.login-body {
+    background: #0f172a;
+    color: black;
+}
+
+
+.nav-bg {
+    background: #0f172a;
+}
+
+.nav-bg a {
+    color: white;
+}
+
+.admin-l {
+    margin-left: -65px;
+    margin-top: 10px;
+
+}
+
+.admin-link {
+    color: #fff !important;
+    background-color: #0d6efd !important;
+
+}
+
+
+
+.admin-link,
+.admin-link:hover,
+.admin-link:focus,
+.admin-link:active,
+.admin-link.show {
+    color: #fff !important;
+    background-color: #0d6efd !important;
+    border-radius: 6px;
+}
+
+.nav-bg .dropdown-menu a {
+    color: #000000;
+}
+
+.navbar-nav .nav-link {
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.navbar-nav .nav-link:not(.admin-link):hover {
+    background: white;
+    color: black !important;
+}
+
+/* активная вкладка */
+.navbar-nav .nav-link.active {
+    background: white;
+    color: black !important;
+    font-weight: 600;
+}
+
+
+/*Статус рабочего или нерабочего оборудования */
+
+.status-ok {
+    color: #198754;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.status-error {
+    color: #dc3545;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/*Статус рабочего или нерабочего оборудования Конец */

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+
+    <div class="nav-bg">
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">PC_inv_№1</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+
+                    <!-- Левое меню -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center gap-5">
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="index.html" href="index.html">
+                                Компьютеры
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="monitor.html" href="monitor.html">
+                                Мониторы
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="print.html" href="print.html">
+                                Принтеры
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="ups.html" href="ups.html">
+                                УПС
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="network.html" href="network.html">
+                                Сетевое оборудование
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-page="various.html" href="various.html">
+                                Разное
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Правый dropdown -->
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Admin
+                        </button>
+                        <ul class="dropdown-menu admin-l">
+                            <li><a class="dropdown-item" href="#">Настройки</a></li>
+                            <li><a class="dropdown-item" href="#">Пользователи</a></li>
+                            <li><a class="dropdown-item" href="./department.html">Отделения</a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="login.html">Выйти</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <main>
+        <div class="container-fluid mt-4">
+
+            <!-- Заголовок -->
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                <h3>
+                    Кабинеты | Бухгалтерия
+                </h3>
+
+                <a href="add-room.html" class="btn btn-primary">
+                    + Добавить кабинет
+                </a>
+
+            </div>
+
+
+            <!-- Кабинеты -->
+
+            <div class="row g-4">
+
+
+                <!-- Кабинет -->
+
+
+
+
+                <!-- Кабинет -->
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+
+                    <div class="card room-card shadow border-0">
+
+                        <div class="card-body text-center">
+
+                            <i class="bi bi-door-open fs-1"></i>
+
+                            <h5 class="mt-3">
+
+                                Кабинет 204
+
+                            </h5>
+
+                            <p class="text-muted">
+
+                                ПК: 8 <br>
+                                Мониторы: 8 <br>
+                                Принтеры: 1
+
+                            </p>
+
+                            <div class="d-flex justify-content-center gap-2">
+
+                                <a href="./show-room.html" class="btn btn-sm btn-info">
+
+                                    <i class="bi bi-eye"></i>
+
+                                </a>
+
+                                <a class="btn btn-sm btn-warning" href="./edit-room.html">
+
+                                    <i class="bi bi-pencil-square"></i>
+
+                                </a>
+
+                                <button class="btn btn-sm btn-danger">
+
+                                    <i class="bi bi-trash"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
