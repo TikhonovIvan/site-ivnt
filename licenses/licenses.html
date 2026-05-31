@@ -16,7 +16,7 @@
     <div class="nav-bg">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">PC_inv_№1</a>
+          <a class="navbar-brand" href="../../index.html">PC_inv_№1</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -119,96 +119,87 @@
     </div>
 
     <main>
-      <div class="container py-5">
-        <!-- Форма -->
-        <div class="card shadow-sm mb-4">
-          <div class="card-header">
-            <h4 class="mb-0">Редактирование пользователя</h4>
+      <div class="container mt-5">
+        <div class="card shadow">
+          <div
+            class="card-header d-flex justify-content-between align-items-center"
+          >
+            <h4 class="mb-0">Управление лицензиями</h4>
+
+            <a href="./license_create.html" class="btn btn-success">
+              Создать лицензию
+            </a>
           </div>
 
           <div class="card-body">
-            <form class="row g-3">
-              <!-- ФИО -->
+            <div class="row mb-3">
               <div class="col-md-6">
-                <label class="form-label"> ФИО </label>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Поиск лицензии"
+                  />
 
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Введите ФИО"
-                />
+                  <button class="btn btn-primary">Найти</button>
+                </div>
               </div>
+            </div>
 
-              <!-- Логин -->
-              <div class="col-md-6">
-                <label class="form-label"> Логин </label>
+            <table class="table table-bordered table-hover">
+              <thead class="table-dark">
+                <tr>
+                  <th>ID</th>
+                  <th>Организация</th>
+                  <th>Ключ</th>
+                  <th>Тип</th>
+                  <th>Устройств</th>
+                  <th>Истекает</th>
+                  <th>Статус</th>
+                  <th>Действия</th>
+                </tr>
+              </thead>
 
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Введите логин"
-                />
-              </div>
+              <tbody>
+                <tr>
+                  <td>1</td>
 
-              <!-- Email -->
-              <div class="col-md-6">
-                <label class="form-label"> Email </label>
+                  <td>Городская больница №1</td>
 
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Введите email"
-                />
-              </div>
+                  <td>INV-2026-ABCD-EFGH</td>
 
-              <!-- Роль -->
-              <div class="col-md-6">
-                <label class="form-label"> Роль </label>
+                  <td>Год</td>
 
-                <select class="form-select">
-                  <option selected disabled>Выберите роль</option>
+                  <td>250</td>
 
-                  <option>root</option>
-                  <option>admin</option>
-                  <option>user</option>
-                </select>
-              </div>
+                  <td>01.01.2027</td>
 
-              <!-- Пароль -->
-              <div class="col-md-6">
-                <label class="form-label"> Пароль </label>
+                  <td>
+                    <span class="badge bg-success"> Активна </span>
+                  </td>
 
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Введите пароль"
-                />
-              </div>
+                  <td>
+                    <div class="btn-group">
+                      <a
+                        href="./license_view.html"
+                        class="btn btn-primary btn-sm"
+                      >
+                        Просмотр
+                      </a>
 
-              <!-- Повторить пароль -->
-              <div class="col-md-6">
-                <label class="form-label"> Повторить пароль </label>
+                      <a
+                        href="license_edit.html"
+                        class="btn btn-warning btn-sm"
+                      >
+                        Изменить
+                      </a>
 
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Повторите пароль"
-                />
-              </div>
-
-              <div class="col-12 mb-3">
-                <label class="form-label"> Примечание </label>
-
-                <textarea class="form-control" rows="3"></textarea>
-              </div>
-
-              <!-- Кнопка -->
-              <div class="col-12">
-                <button class="btn btn-primary">
-                  Редактировать пользователя
-                </button>
-              </div>
-            </form>
+                      <button class="btn btn-danger btn-sm">Отозвать</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

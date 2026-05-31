@@ -25,19 +25,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /*Генерация инвентарного кода для ПК */
 
-
-
-async function generatePCCode() {
-
-    const response = await fetch('/generate-pc-code');
-
-    const data = await response.json();
-
-    document.getElementById('pcCode').value =
-        data.code;
-}
-
-document.addEventListener(
-    'DOMContentLoaded',
-    generatePCCode
-);

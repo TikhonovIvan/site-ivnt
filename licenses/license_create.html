@@ -16,7 +16,7 @@
     <div class="nav-bg">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">PC_inv_№1</a>
+          <a class="navbar-brand" href="../../index.html">PC_inv_№1</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -118,100 +118,65 @@
       </nav>
     </div>
 
-    <main>
-      <div class="container py-5">
-        <!-- Форма -->
-        <div class="card shadow-sm mb-4">
-          <div class="card-header">
-            <h4 class="mb-0">Редактирование пользователя</h4>
-          </div>
+    <main class="container mt-4">
+      <form>
+        <div class="card shadow">
+          <div class="card-header bg-success text-white">Создание лицензии</div>
 
           <div class="card-body">
-            <form class="row g-3">
-              <!-- ФИО -->
-              <div class="col-md-6">
-                <label class="form-label"> ФИО </label>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label>Организация</label>
 
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Введите ФИО"
-                />
+                <input type="text" class="form-control" />
               </div>
 
-              <!-- Логин -->
-              <div class="col-md-6">
-                <label class="form-label"> Логин </label>
-
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Введите логин"
-                />
-              </div>
-
-              <!-- Email -->
-              <div class="col-md-6">
-                <label class="form-label"> Email </label>
-
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Введите email"
-                />
-              </div>
-
-              <!-- Роль -->
-              <div class="col-md-6">
-                <label class="form-label"> Роль </label>
+              <div class="col-md-6 mb-3">
+                <label>Тип лицензии</label>
 
                 <select class="form-select">
-                  <option selected disabled>Выберите роль</option>
-
-                  <option>root</option>
-                  <option>admin</option>
-                  <option>user</option>
+                  <option>1 месяц</option>
+                  <option>3 месяца</option>
+                  <option>6 месяцев</option>
+                  <option>12 месяцев</option>
                 </select>
               </div>
 
-              <!-- Пароль -->
-              <div class="col-md-6">
-                <label class="form-label"> Пароль </label>
+              <div class="col-md-6 mb-3">
+                <label>Количество пользователей</label>
 
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Введите пароль"
-                />
+                <input type="number" class="form-control" value="50" />
               </div>
 
-              <!-- Повторить пароль -->
-              <div class="col-md-6">
-                <label class="form-label"> Повторить пароль </label>
+              <div class="col-md-6 mb-3">
+                <label>Количество устройств</label>
 
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Повторите пароль"
-                />
+                <input type="number" class="form-control" value="500" />
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label>Дата начала</label>
+
+                <input type="date" class="form-control" />
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label>Дата окончания</label>
+
+                <input type="date" class="form-control" />
               </div>
 
               <div class="col-12 mb-3">
-                <label class="form-label"> Примечание </label>
+                <label>Примечание</label>
 
                 <textarea class="form-control" rows="3"></textarea>
               </div>
+            </div>
 
-              <!-- Кнопка -->
-              <div class="col-12">
-                <button class="btn btn-primary">
-                  Редактировать пользователя
-                </button>
-              </div>
-            </form>
+            <button class="btn btn-success">Создать лицензию</button>
           </div>
         </div>
-      </div>
+      </form>
     </main>
 
     <script src="../js/bootstrap.bundle.min.js"></script>

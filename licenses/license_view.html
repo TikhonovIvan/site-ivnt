@@ -16,7 +16,7 @@
     <div class="nav-bg">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">PC_inv_№1</a>
+          <a class="navbar-brand" href="../../index.html">PC_inv_№1</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -119,96 +119,65 @@
     </div>
 
     <main>
-      <div class="container py-5">
-        <!-- Форма -->
-        <div class="card shadow-sm mb-4">
-          <div class="card-header">
-            <h4 class="mb-0">Редактирование пользователя</h4>
+      <div class="container mt-5">
+        <div class="card shadow">
+          <div class="card-header bg-primary text-white">
+            <h4>Лицензия INV-2026-ABCD-EFGH</h4>
           </div>
 
           <div class="card-body">
-            <form class="row g-3">
-              <!-- ФИО -->
-              <div class="col-md-6">
-                <label class="form-label"> ФИО </label>
+            <table class="table table-bordered">
+              <tr>
+                <th>Организация</th>
+                <td>Городская больница №1</td>
+              </tr>
 
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Введите ФИО"
-                />
-              </div>
+              <tr>
+                <th>Тип лицензии</th>
+                <td>Годовая</td>
+              </tr>
 
-              <!-- Логин -->
-              <div class="col-md-6">
-                <label class="form-label"> Логин </label>
+              <tr>
+                <th>Дата начала</th>
+                <td>01.01.2026</td>
+              </tr>
 
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Введите логин"
-                />
-              </div>
+              <tr>
+                <th>Дата окончания</th>
+                <td>01.01.2027</td>
+              </tr>
 
-              <!-- Email -->
-              <div class="col-md-6">
-                <label class="form-label"> Email </label>
+              <tr>
+                <th>Пользователей</th>
+                <td>50</td>
+              </tr>
 
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Введите email"
-                />
-              </div>
+              <tr>
+                <th>Устройств</th>
+                <td>500</td>
+              </tr>
 
-              <!-- Роль -->
-              <div class="col-md-6">
-                <label class="form-label"> Роль </label>
+              <tr>
+                <th>Статус</th>
+                <td>
+                  <span class="badge bg-success"> Активна </span>
+                </td>
+              </tr>
+            </table>
 
-                <select class="form-select">
-                  <option selected disabled>Выберите роль</option>
+            <hr />
 
-                  <option>root</option>
-                  <option>admin</option>
-                  <option>user</option>
-                </select>
-              </div>
+            <h5>Управление лицензией</h5>
 
-              <!-- Пароль -->
-              <div class="col-md-6">
-                <label class="form-label"> Пароль </label>
+            <div class="d-flex gap-2">
+              <button class="btn btn-success">Продлить</button>
 
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Введите пароль"
-                />
-              </div>
+              <button class="btn btn-warning">Приостановить</button>
 
-              <!-- Повторить пароль -->
-              <div class="col-md-6">
-                <label class="form-label"> Повторить пароль </label>
+              <button class="btn btn-danger">Отозвать</button>
 
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Повторите пароль"
-                />
-              </div>
-
-              <div class="col-12 mb-3">
-                <label class="form-label"> Примечание </label>
-
-                <textarea class="form-control" rows="3"></textarea>
-              </div>
-
-              <!-- Кнопка -->
-              <div class="col-12">
-                <button class="btn btn-primary">
-                  Редактировать пользователя
-                </button>
-              </div>
-            </form>
+              <button class="btn btn-secondary">Сбросить активацию</button>
+            </div>
           </div>
         </div>
       </div>
